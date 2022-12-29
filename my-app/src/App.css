@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -26,8 +26,62 @@
 
 .App-link {
   color: #61dafb;
+} */
+.App {
+  text-align: center;
+  background-color: #dadada;
+}
+nav {
+  background-color:#2d2d2d;
+  padding:2%;
+  text-align:center;
+}
+nav a{
+  color:#ffffff;
+  padding:1%;
+  font-weight: bold;
 }
 
+.element {
+  background-color:#2d2d2d;
+  background-color: #323232;
+  display:inline-block;
+  background-color: #444444;
+  /* background-color: #dadada; */
+  color:#ffffff;
+  width: 25vw;
+  margin: 2%;
+  border-radius:10px;
+  padding:1.5%;
+  /* padding-top:0.5%; */
+  text-align:left;
+/*   */
+/*  #dadada */
+}
+.mainBox{
+  /* padding:.5%; */
+  /* margin: 2%; */
+  padding:0;
+  margin:0;
+}
+.box {
+  background-color: #353535;
+  /* height:50vh; */
+  /* width: 50vh; */
+  /* width:28vw; */
+  aspect-ratio : 1 / 1;
+  width: 98%;
+  /* height: auto; */
+  text-align:center;
+  border-radius: 10px;
+  /* margin:3% auto; */
+  margin:0 auto;
+  /* margin-top:5%; */
+  /* top:5%; */
+}
+.smallerBox{
+  background-color:#323232;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
