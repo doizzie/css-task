@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import OvalBoxy from './OvalBoxy';
 
 export default function Box() {
     // render() {
@@ -15,22 +16,10 @@ export default function Box() {
           <form>
             <input type="text" id="search" name="search" placeholder="Placeholder..."/>
             <button type="submit" id="submit">Submit</button>
-            {/* <input type="submit" id="submit"/> */}
           </form>
-          <div className="boxy">
-            <div className="oval"><img src=""/></div>
-            <div className="righter">
-              <h4>Lorem ipsum</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac facilisis tellus. Suspendisse vitae lobortis augue. Sed in ante nec metus elementum rhoncus.</p>
-            </div>
-          </div>
-          <div className="boxy">
-            <div className="oval"><img src=""/></div>
-            <div className="righter">
-              <h4>Lorem ipsum</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac facilisis tellus. Suspendisse vitae lobortis augue. Sed in ante nec metus elementum rhoncus.</p>
-            </div>
-          </div>
+          <OvalBoxy/>
+          <OvalBoxy/>
+          <OvalBoxy/>
         </div>
       </div>
       );
