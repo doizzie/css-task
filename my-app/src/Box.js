@@ -14,7 +14,8 @@ export default function Box() {
         <div className="smallerBox">
           <form>
             <input type="text" id="search" name="search" placeholder="Placeholder..."/>
-            <input type="submit" id="submit"/>
+            <button type="submit" id="submit">Submit</button>
+            {/* <input type="submit" id="submit"/> */}
           </form>
           <div className="boxy">
             <div className="oval"><img src=""/></div>

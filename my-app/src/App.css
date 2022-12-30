@@ -1,47 +1,43 @@
-/* .App {
-  text-align: center;
+::-webkit-scrollbar {
+  width: 11px;
+  margin-bottom:10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Track */
+::-webkit-scrollbar-track {
+  background: #dadada;
+  border-radius: 0px 0px 25px 25px;
+  margin-bottom:15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #444444;
+  border-radius: 0px 0px 25px 25px;
+  margin-bottom: 15px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #444444;
 }
-
-.App-link {
-  color: #61dafb;
-} */
-
-
 .App {
   text-align: center;
   background-color: #dadada;
+  /* height: 100vh; */
+  height: 100vh;
+  overflow:hidden;
 }
 nav {
   background-color:#2d2d2d;
-  padding:2%;
+  padding:1%;
   text-align:center;
 }
 nav a{
   color:#ffffff;
   padding:1%;
   font-weight: bold;
+  text-decoration: none;
 }
 
 .element {
@@ -49,26 +45,23 @@ nav a{
   background-color: #323232;
   display:inline-block;
   background-color: #444444;
-  /* background-color: #dadada; */
   color:#ffffff;
-  width: 25vw;
-  margin: 2%;
+  width: 24vw;
+  margin: 3%;
   border-radius:10px 10px 10px 10px;
-  /* padding:1.5%; */
-  /* padding-top:0.5%; */
   text-align:left;
-/*   */
-/*  #dadada */
 }
 h1{
-  font-size: 20px;
+  font-size: 18px;
   margin-bottom:0;
 }
 h2{
   font-size: 15px;
   margin-top:0;
+  margin-bottom:0;
 }
 h3{
+  margin-top:2%;
   font-size: 13px;
   opacity:0.7;
 }
@@ -78,29 +71,32 @@ h3{
   /* margin: 2%; */
   padding:0;
   margin:5%;
+  margin-bottom:2%;
+  /* background-color: white; */
 }
 .box {
   background-color: #353535;
-  /* height:50vh; */
-  /* width: 50vh; */
-  /* width:28vw; */
   aspect-ratio : 1 / 1;
-  width: 98%;
-  /* height: auto; */
+  width: 95%;
+
   text-align:center;
   border-radius: 10px;
-  /* margin:3% auto; */
   margin:0 auto;
-  /* margin-top:5%; */
-  /* top:5%; */
 }
 .smallerBox{
   background-color:#323232;
-  padding: 2% 5%;
-  /* display: inline-flex;
-  display: -webkit-inline-flex; */
+  height: 27vh;
   display:block;
+  border-radius: 0px 0px 10px 10px;
   overflow-y: scroll;
+}
+.boxy {
+  border-bottom: 1px solid #dadada;
+  padding: 0% 2% 2% 5%;
+}
+form {
+  padding: 2% 2% 0% 5%;
+  margin-bottom:5%;
 }
 form input{
   color:#ffffff;
@@ -108,30 +104,47 @@ form input{
 }
 #search {
   width: 80%;
-  /* height: 35px; */
   border:none;
   font-size:14px;
   border-radius:20px 0px 0px 20px;
   padding:10px 5px 10px 15px;
   color:#ffffff;
 }
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #ffffff;
+  opacity: 1; /* Firefox */
+  font-weight: bold;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color:#ffffff;
+  font-weight: bold;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color:#ffffff;
+  font-weight: bold;
+}
 #submit {
   width: 14%;
   border:none;
   background-color:#444444;
   color:#ffffff;
-  padding: 14px 15px 11.5px 8px;
+  padding: 14px 15px 12px 8px;
   border-radius: 0px 20px 20px 0px;
   font-size: 10px;
   font-weight:750;
   text-align: center;
-
   text-transform: uppercase;
+}
+#submit:hover{
+  cursor:pointer;
+  background-color:#353535;
 }
 
 .oval{
   aspect-ratio: 1/1;
-  width:3vw;
+  width:2vw;
   /* height:50px; */
   background-color:#444444;
   border-radius:100px;
@@ -139,12 +152,15 @@ form input{
   /* display: block-inline; */
   float: left;
   margin-right:2%;
-  margin-bottom:2vw;
+  margin-bottom:1.5vw;
 }
 .righter{
   /* display: inline-block; */
-  /* vertical-align: top; */
+  vertical-align: top;
   /* background-color:yellow; */
+  margin-top:0;
+  margin-bottom:0;
+  padding-top:0;
   /* width:90%; */
   /* color:yellow; */
   /* float:right; */
@@ -153,18 +169,12 @@ form input{
   /* display:inline-block; */
 }
 .righter h4 {
+  margin-top:2%;
   margin-bottom:1%;
 }
 .righter p {
-  font-size: 12px;
-  font-weight:700;
+  font-size: 11px;
+  font-weight:600;
   margin-top:0;
-}
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  margin-bottom:1.5%;
 }
