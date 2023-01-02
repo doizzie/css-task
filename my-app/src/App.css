@@ -39,18 +39,22 @@ body {
 
 nav {
   background-color:#2d2d2d;
-  padding:1%;
+  /* padding:1%; */
   text-align:center;
 }
 nav a{
   color:#ffffff;
-  padding:1%;
+  /* padding:1%; */
   font-weight: bold;
   text-decoration: none;
 }
 nav a:hover{
   opacity:0.5;
 }
+/* input[type=checkbox]{
+  display:none;
+} */
+
 
 .element {
   background-color:#2d2d2d;
