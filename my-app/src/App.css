@@ -1,17 +1,15 @@
+/* Task completed by Dominyka Lupeikytė. 2023. For Kicker Tech */
 ::-webkit-scrollbar {
   width: 11px;
   margin-bottom:10px;
-  /* margin-right:20px; */
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
   background: #dadada;
-  /* border-radius: 0px 0px 25px 25px; */
   border-radius:25px;
   margin-bottom:15px;
   margin-top:15px;
-  /* margin-right:10px; */
 }
 
 /* Handle */
@@ -20,7 +18,6 @@
   border-radius:25px;
   margin-bottom:15px;
   margin-top:15px;
-  /* margin-right:10px; */
 }
 
 /* Handle on hover */
@@ -33,28 +30,22 @@ body {
 .App {
   text-align: center;
   height: auto;
-
-  /* overflow:hidden; */
 }
 
 nav {
   background-color:#2d2d2d;
-  /* padding:1%; */
+
   text-align:center;
 }
 nav a{
   color:#ffffff;
-  /* padding:1%; */
+
   font-weight: bold;
   text-decoration: none;
 }
 nav a:hover{
   opacity:0.5;
 }
-/* input[type=checkbox]{
-  display:none;
-} */
-
 
 .element {
   background-color:#2d2d2d;
@@ -122,7 +113,6 @@ form input{
   border:none;
   font-size:14px;
   border-radius:20px 0px 0px 20px;
-  /* padding:10px 5px 10px 15px; */
   padding-left: 15px;
   color:#ffffff;
   vertical-align: top;
@@ -149,8 +139,6 @@ form input{
   vertical-align: top;
   background-color:#444444;
   color:#ffffff;
-  /* padding-left: 1%; */
-  /* padding: 14px 15px 12px 8px; */
   border-radius: 0px 20px 20px 0px;
   font-size: 10px;
   font-weight:750;
@@ -198,16 +186,12 @@ form input{
     height: auto;
   }
   nav a {
-    /* width: 5px; */
-    /* background-color: yellow; */
-    /* height:auto; */
     overflow-wrap:break-word;
   }
   .element{
     width:85vw;
     height: 44vw;
     display:block;
-    /* text-align:center; */
     margin:2% auto;
   }
   .mainBox, .smallerBox {
@@ -216,17 +200,13 @@ form input{
   .mainBox{
     float:left;
     width:30vw;
-    /* width:37.5vw; */
     margin-top:0;
     display:flex;
     flex-direction:column-reverse;
     padding:0;
   }
   .smallerBox{
-    /* float:right; */
-    width:45%;
     width:45.6vw;
-    /* width:37.5vw; */
     height: 100%;
     padding-right:1%;
     border-radius: 0px 10px 10px 0px;
@@ -235,42 +215,17 @@ form input{
     padding-right:2%;
   }
   .box{
-    /* position:absolute; */
-    /* display:flex; */
-    /* bottom: 10px; */
-    /* width:350px; */
     width:29vw;
-    /* width: 30vmin; */
-    /* width:100%; */
-    /* margin:0 auto; */
   }
   #submit{
-    /* width:10%; */
     padding-left:1%;
-    /* width:40px; */
-    /* font-size:10px; */
+
   }
   form {
-    /* width:80%; */
     padding-right:0%;
     margin-right:0;
     padding-right:.5%;
-    /* padding:0; */
-    /* font-size: 9px; */
-    /* width:40px; */
-  }
-  #search{
-    /* width: 70%; */
-    /* width: 78%; */
-  }
-  h1 {
-    /* font-size:0.9em; */
-  }
-  h2 {
-    /* font-size: 0.9em; */
-  }
-  h3 {
-    /* font-size:0.9em; */
+
   }
 }
 @media screen and (min-width: 641px) and (max-width: 813px){

@@ -1,3 +1,4 @@
+// Task completed by Dominyka Lupeikytė. 2023. For Kicker Tech
 import React from 'react';
 import ReactDOM from 'react-dom';
 import OvalBoxy from './OvalBoxy';

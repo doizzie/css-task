@@ -1,8 +1,8 @@
+// Task completed by Dominyka Lupeikytė. 2023. For Kicker Tech
 import React from 'react';
 import ReactDOM from 'react-dom';
 
 export default function OvalBoxy() {
-    // render() {
       return (
           <div className="boxy">
             <div className="oval"><img src=""/></div>
@@ -12,5 +12,4 @@ export default function OvalBoxy() {
             </div>
           </div>
       );
-    // }
   };

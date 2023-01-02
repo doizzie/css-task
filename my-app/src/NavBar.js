@@ -1,3 +1,4 @@
+// Task completed by Dominyka Lupeikytė. 2023. For Kicker Tech
 import React from 'react';
 import './Nav.css';
 
@@ -12,8 +13,8 @@ export default function NavBar() {
     });
 
     return (
-      <nav role="navigation" id="menuToggle">
-        <input type="checkbox" onClick='fixOverflow()'/>
+      <nav id="menuToggle">
+        <input type="checkbox" />
 
         <span></span>
         <span></span>
@@ -24,13 +25,4 @@ export default function NavBar() {
         </ul>
     </nav>
     );
-  }
-
-  function fixOverflow(){
-    var doc = document.getElementById("app");
-    if(doc.classList.contains("overflowHiddenCompletely")){
-      doc.classList.remove("overflowHiddenCompletely");
-    } else {
-      doc.classList.add("overflowHiddenCompletely");
-    }
   }

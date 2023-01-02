@@ -1,4 +1,5 @@
-import logo from './logo.svg';
+// Task completed by Dominyka Lupeikytė. 2023. For Kicker Tech
+
 import './App.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -9,11 +10,6 @@ import NavBar from './NavBar.js';
 function App() {
   return (
     <div className="App" id="app">
-      {/* <nav>
-        <a>Lorem ipsum</a>
-        <a>Lorem ipsum</a>
-        <a>Lorem ipsum</a>
-      </nav> */}
       <NavBar/>
       <Box/>
       <Box/>
